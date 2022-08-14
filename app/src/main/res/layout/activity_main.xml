@@ -9,12 +9,31 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ProgressBar
+        android:id="@+id/pbProgress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+ <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+    android:id="@+id/btnFab"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_add"
+    app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintRight_toRightOf="parent"
+     android:layout_margin="20dp"
+     />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
